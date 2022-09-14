@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<accessories>
+<watch>
+    <name>rolex</name>
+    <price>$50</price>
+    <description>rolex is too much best Product</description>
+</watch>
+<watch>
+    <name>rolex1</name>
+    <price>$20</price>
+    <description>rolex is medile best Product</description>
+</watch>
+<watch>
+    <name>rolex2</name>
+    <price>$10</price>
+    <description>rolex is lowest best Product</description>
+</watch>
+</accessories>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+</head>
+
+<body>
+
+    <div id="main"></div>
+
+
+
+</body>
+
+<script>
+    var henly, parser, xmldocu
+
+
+    var text = `
+<data>
+<watch>
+    <name>rolex</name>
+    <name>rolex</name>
+    <name>rolex</name>
+    <name>rolex</name>
+    <name>rolex</name>
+    <price>$50</price>
+    <price>$50</price>
+    <price>$50</price>
+    <price>$50</price>
+    <description>rolex is too much best Product</description>
+    <description>rolex is too much best Product</description>
+    <description>rolex is too much best Product</description>
+    <description>rolex is too much best Product</description>
+
+</watch>
+
+<watch>
+    <name>rado</name>
+    <name>rado</name>
+    <name>rado</name>
+    <name>rado</name>
+    <name>rado</name>
+    <price>$90</price>
+    <price>$90</price>
+    <price>$90</price>
+    <price>$90</price>
+    <description>rolex is too much best Product</description>
+    <description>rolex is too much best Product</description>
+    <description>rolex is too much best Product</description>
+    <description>rolex is too much best Product</description>
+</watch>
+
+<watch >
+    <name>nick</name>
+    <name>nick</name>
+    <name>nick</name>
+    <name>nick</name>
+    <name>nick</name>
+    <price>$70</price>
+    <price>$70</price>
+    <price>$70</price>
+    <price>$70</price>
+    <description>rolex is too much best Product</description>
+    <description>rolex is too much best Product</description>
+    <description>rolex is too much best Product</description>
+    <description>rolex is too much best Product</description>
+</watch>
+</data>
+`
+    parser = new DOMParser();
+    xmldocu = parser.parseFromString(text, "text/xml")
+
+    for (var i = 0; i <= text.length; i++) {
+
+        for (var j = 0; j <= 12; j++){
+         
+            document.write("<br>", xmldocu.getElementsByTagName("data")[0].children[i].children[j].childNodes[0].nodeValue)
+            
+         
+        
+
+        }
+    }
+
+
+</script>
+
+</html>
